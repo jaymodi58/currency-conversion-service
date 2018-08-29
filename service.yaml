@@ -6,9 +6,9 @@
  spec:
    type: LoadBalancer
    ports:
-   - port: 9090
-     name: config-server-port
    - port: 8888
+     name: config-server-port
+   - port: 8761
      name: eureka-naming-server-port
    - port: 8000
      name: forex-service-port

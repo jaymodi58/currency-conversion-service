@@ -14,7 +14,7 @@
          - name: eureka-naming-server
            image: us.gcr.io/currency-exchnage-214419/eureka-naming-server
            ports:
-             - containerPort: 9090
+             - containerPort: 8761
          - name: config-server
            image: us.gcr.io/currency-exchnage-214419/config-server
            ports:
