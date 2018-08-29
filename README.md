@@ -62,6 +62,18 @@
 		Delete the deployment: `kubectl delete deployment currency-exchange`
 
 	#### Deploy the application on Google Kubernetes Cluster.
-    1.
-    2.
-    3.
+    Either you can use [gcloud](https://cloud.google.com/sdk/gcloud/) locally or you can open [Google Cloud Shell](https://cloud.google.com/shell/).
+	
+	1. Connect to the cluster first.  
+		`gcloud container clusters get-credentials currency-exchange-cluster --zone us-east4-a --project currency-exchnage-214419`
+    
+	2. Create deployment.  
+		`kubectl apply -f https://raw.githubusercontent.com/jaymodi58/currency-conversion-service/master/deployment.yaml`
+    
+	3. Create service.  
+		`kubectl apply -f https://raw.githubusercontent.com/jaymodi58/currency-conversion-service/master/services.yaml`
+	
+	4. Get running service details.  
+		`kubectl get services`
+		**OR**
+		You can use Kubernetes UI from the google account. All you need is external ip and port to reach out.
