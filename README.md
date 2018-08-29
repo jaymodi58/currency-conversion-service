@@ -1,4 +1,4 @@
-# spring-boot-application
+# currency-conversion-service
 1. forex-service
 2. currency-conversion-service
 3. eureka-naming-server
