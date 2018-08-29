@@ -6,6 +6,13 @@
  spec:
    type: LoadBalancer
    ports:
+   - port: 9090
+     name: config-server-port
+   - port: 8888
+     name: eureka-naming-server-port
    - port: 8000
+     name: forex-service-port
+   - port: 8100
+     name: currency-conversion-service-port
    selector:
      app: currency-exchange

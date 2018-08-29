@@ -11,8 +11,19 @@
          app: currency-exchange
      spec:
        containers:
+         - name: eureka-naming-server
+           image: us.gcr.io/currency-exchnage-214419/eureka-naming-server
+           ports:
+             - containerPort: 9090
+         - name: config-server
+           image: us.gcr.io/currency-exchnage-214419/config-server
+           ports:
+             - containerPort: 8888
          - name: forex-service
            image: us.gcr.io/currency-exchnage-214419/forex-service
            ports:
              - containerPort: 8000
-             
+         - name: currency-conversion-service
+           image: us.gcr.io/currency-exchnage-214419/currency-conversion-service
+           ports:
+             - containerPort: 8100
