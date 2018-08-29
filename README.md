@@ -71,7 +71,7 @@
 		`kubectl apply -f https://raw.githubusercontent.com/jaymodi58/currency-conversion-service/master/deployment.yaml`
     
 	3. Create service.  
-		`kubectl apply -f https://raw.githubusercontent.com/jaymodi58/currency-conversion-service/master/services.yaml`
+		`kubectl apply -f https://raw.githubusercontent.com/jaymodi58/currency-conversion-service/master/service.yaml`
 	
 	4. Get running service details.  
 		`kubectl get services`
