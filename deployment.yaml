@@ -27,3 +27,7 @@
            image: us.gcr.io/currency-exchnage-214419/currency-conversion-service
            ports:
              - containerPort: 8100
+         - name: currency-zuul-service
+           image: us.gcr.io/currency-exchnage-214419/currency-zuul-service
+           ports:
+             - containerPort: 8084
